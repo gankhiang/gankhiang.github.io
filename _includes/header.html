@@ -35,27 +35,18 @@
 					<nav id="nav">
 						<ul>
 							{% assign current = page.url | downcase | split: '/' %}
-							<li {% if current[1] == 'index.html' %}class="current"{% endif %}><a href="{{ site.baseurl }}/index.html">Home</a></li>
+							<li {% if current[1] == 'index.html' %}class="current"{% endif %}><a href="{{ site.baseurl }}/index.html">Home</a></li> 	<li {% if current[1] == 'blog' %}class="current"{% endif %}><a href="{{ site.baseurl }}/blog">Projects</a></li>
 							<li>
-								<a href="">Dropdown</a>
+								<a href="">Services</a>
 								<ul>
 									<li><a href="#">Music</a></li>
 									<li><a href="#">Video</a></li>
 									<li><a href="#">Events</a></li>
-									<li>
-										<a href="">Submenu</a>
-										<ul>
-											<li><a href="#">this </a></li>
-											<li><a href="#">is</a></li>
-											<li><a href="#">a test</a></li>
-											<li><a href="#">of</a></li>
-											<li><a href="#">web</a></li>
-										</ul>
-									</li>
-									<li><a href="#">More Info</a></li>
+									
+									
 								</ul>
 							</li>
-							<li {% if current[1] == 'blog' %}class="current"{% endif %}><a href="{{ site.baseurl }}/blog">Projects</a></li>
+						
 							
 						</ul>
 					</nav>
