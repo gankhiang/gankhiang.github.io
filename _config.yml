@@ -2,5 +2,4 @@ url: https://gankhiang.github.io
 name: Gankhiang Entertainment
 description: Gankhiang Entertainment
 paginate: 10
-baseurl: '/Arcana-Jekyll-Theme'
 plugins: [jekyll-paginate]
