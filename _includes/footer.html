@@ -24,8 +24,8 @@
 							</div>
 						</div>
 						<section class="6u">
-							<h3>Get In Touch</h3>
-							<form class="gform"  method="POST" data-email="gankhiang@gmail.com" action=" https://script.google.com/macros/s/AKfycbx6_T7FX6rgqJk-PQ4sDxOMcGvE-lVbB9Q1MXWslXgg9kD0F9A/exec">
+							<h3 id="contributetitle">Get In Touch</h3>
+							<form onsubmit="myFunction()" id="deposit" class="gform"  method="POST" data-email="gankhiang@gmail.com" action=" https://script.google.com/macros/s/AKfycbx6_T7FX6rgqJk-PQ4sDxOMcGvE-lVbB9Q1MXWslXgg9kD0F9A/exec">
 <label class="sr-only"></label>
   <input id="honeypot" type="text" name="honeypot" value="" style="display:none"/>
 <div style="display:none" class="thankyou_message">
@@ -82,6 +82,11 @@
 
 			</div>
 
+			<script>function myFunction() {
+				$('#deposit').hide();
+			 document.getElementById("contributetitle").innerHTML = "Thank You for your contribution";
+			 }
+		 </script>
 	</body>
 
 </html>
