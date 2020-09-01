@@ -3,3 +3,5 @@ name: Arcana
 description: Gankhiang Entertainment
 paginate: 10
 plugins: [jekyll-paginate]
+
+theme: jekyll-theme-cayman
